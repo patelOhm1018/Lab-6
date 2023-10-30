@@ -5,6 +5,11 @@ if __name__ == '__main__':
         password += 33333333
         print("Your password has been encoded and stored!")
 
+    def decode():
+        password = int(input("Please enter your password to encode:"))
+        password -= 33333333
+        print("Your password has been decoded and stored!")
+
     print("Menu")
     print("-------------")
     print("1. Encode")
@@ -13,8 +18,5 @@ if __name__ == '__main__':
     user_input = input("Please enter an option:")
     if user_input == "1":
         encode()
-
-
-
-
-
+    if user_input == "2":
+        decode()
