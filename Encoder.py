@@ -7,8 +7,11 @@ if __name__ == '__main__':
 
     #This is the change made by Om Patel
     def decode():
-        password = int(input("Please enter your password to encode:"))
-        password -= 33333333
+        decoded_password =""
+        for digit in password:
+            decoded_digit = str((int(digit) - 3) % 10)
+            decoded_password += decoded_digit
+        return decoded_password
         print("Your password has been decoded and stored!")
 
     print("Menu")
