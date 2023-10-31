@@ -5,6 +5,7 @@ if __name__ == '__main__':
         password += 33333333
         print("Your password has been encoded and stored!")
 
+    #This is the change made by Om Patel
     def decode():
         password = int(input("Please enter your password to encode:"))
         password -= 33333333
